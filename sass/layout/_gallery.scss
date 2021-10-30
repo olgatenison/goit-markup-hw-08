@@ -10,12 +10,14 @@
 }
 
 .gallery-list__item{
+    
+    @media screen and (min-width: 1200px) {
     /*width: 370px;*/
     flex-basis: calc((100% - 90px) / 3);
     &:not(:first-child) {
         margin-left: 30px;
+        } 
     } 
-    
 }
 .gallery-list__top-wrapper{
     position: relative;
