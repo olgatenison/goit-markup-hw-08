@@ -1,0 +1,213 @@
+
+.backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &.is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        .modal{
+            transform: translateY(100%);
+        }
+    }
+    
+}
+
+.modal {
+    position: relative;
+
+    width: 528px;
+    height: 581px;
+    background-color: var(--background-main-color);
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px 
+    rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    
+    transform: translateY(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.close-btn {
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+    background-color: var(--background-main-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    right: 8px;
+    top: 8px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    
+    
+}
+.close-btn-icon{
+    width: 18px;
+    height: 18px;
+    fill: #000000;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover{
+        fill: var(--accent-color);
+    }
+}
+
+.modal-title{
+    @include font (20px, 700, 1.15, 0.03em)
+    text-align: center;
+    top: 40px;
+    margin-bottom: 12px;
+    color: var(--secondary-title-color);
+}
+.modal-field {
+    margin-bottom: 10px;
+}
+.input-wrapper{
+    display: block;
+    position: relative;
+}
+.input-icon{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: var(--secondary-title-color);
+
+    width: 18px;
+    height: 18px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input{
+    width: 100%;
+    min-height: 40px;
+ 
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: transparent ;
+
+    padding-left: 42px;
+    padding-right: 20px;
+    outline: none;
+    transition: solid 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        border-color: var(--accent-color);
+    }
+    &:focus+.input-icon{
+        fill: var(--accent-color);
+    }
+}
+
+.input-label {
+    @include font (12px, 400, 1.16, 0.01em)
+    color: var(--secondary-text-color);
+
+    display: flex;
+    margin-bottom: 4px;
+}
+.modal-text-input{
+    width: 100%;
+    min-height: 120px;
+    resize: none;
+
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: transparent ;
+    outline: none;
+    padding: 12px 16px;
+    transition: solid 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        border-color: var(--accent-color);
+    }
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+.check-text{
+    @include font (14px, 400, 1.71, 0.03em)
+    color: var(--secondary-text-color);
+
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
+        a {
+            color: var(--accent-color);
+            margin-left: 6px;
+        }
+        span {
+            width: 16px;
+            height: 15px;
+            
+            border: 1px solid #212121;
+            border-radius: 2px;
+            margin-right: 8px;
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+        
+            cursor: pointer;
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}
+
+
+.modal-checkbox{
+    &:checked + .check-text span {
+        background-color: var(--accent-color);
+        border: none;
+    }
+}
+.check-icon{
+    width: 11px;
+    height: 8px;
+    fill: var(--primary-title-color);
+}
+
+.modal-btn{
+    @include font (16px, 700, 1.87, 0.06em);
+    color: var(--primary-title-color);
+
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+   
+    width: 200px;
+    height: 50px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        background-color: #188CE8;
+    }
+}

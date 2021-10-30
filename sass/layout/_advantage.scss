@@ -1,0 +1,40 @@
+.advantage-list{
+    display: flex; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+/* .advantage-list{margin-left: -30px;
+    margin-top: -30px;
+}
+    .advantage-list__item:nth-child(n + 4) {
+    margin-top: 30px;   
+} */
+
+.advantage-list__item {
+    flex-basis: calc((100% - 120px) / 4);
+    &:not(:first-child) {
+        margin-left: 30px;
+    }
+}
+.advantage-list__theme{
+    @include font (14px, 700, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+}
+.advantage-list__text{
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+}
+.advantage-list__item-bg{
+    background-color:var(--btm-primary-color);
+    border-radius: 4px;
+    height: 120px;
+    
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
