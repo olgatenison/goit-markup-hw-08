@@ -792,7 +792,7 @@ body {
 @media (min-width: 1200px) {
   .footer-info {
     align-items: baseline;
-    width: 100%;
+    justify-content: space-between;
   }
 }
 
@@ -886,6 +886,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-social-list {
+    margin-right: 90px;
+    justify-content: center;
+  }
+}
+
 .footer-social-list__link {
   display: flex;
   align-items: center;
@@ -908,7 +915,7 @@ body {
   fill: #FFFFFF;
 }
 
-@media screen and (max-width: 1199 px) {
+@media screen and (max-width: 1199px) {
   .signup-form {
     justify-items: center;
   }
@@ -921,7 +928,6 @@ body {
 }
 
 .signup-input {
-  width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -956,9 +962,9 @@ body {
   color: #ffffff;
 }
 
-@media screen and (max-width: 1199 px) {
+@media screen and (max-width: 1199px) {
   .signup-input {
-    width: 100%;
+    width: 450px;
   }
 }
 
