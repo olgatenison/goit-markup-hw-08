@@ -114,7 +114,7 @@
 
 .signup-form{
     
-    @media screen and (max-width: 1199 px){
+    @media screen and (max-width: 1199px){
        justify-items: center;
         
     }
@@ -158,8 +158,8 @@
     &:focus::placeholder {
         color: #ffffff;
     }
-    @media screen and (max-width: 1199 px){
-        width: 100%;
+    @media screen and (max-width: 1199px){
+        width: 450px;
        
     }
     @media screen and (min-width: 1200px){
