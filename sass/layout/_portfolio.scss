@@ -1,8 +1,8 @@
 .portfolio-options-list{
     display: flex; 
     flex-wrap: wrap;
-    margin-bottom: 15px;
-    
+    margin-bottom: 40px;
+
     @media screen and (min-width:768px) {
         align-items: center; 
         justify-content: center;
@@ -39,7 +39,7 @@
             margin-right: 8px;
         }
     }  
-    }
+}
     
 
 .portfolio-currunt-btn {
@@ -73,6 +73,7 @@
     color:var(--primary-title-color);
     background-color: var(--wraper-produckt-color);
     transform: translateY(101%);
+    flex-grow: 1;
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .portfolio-link:hover &,
@@ -81,23 +82,54 @@
     }
 }
 .portfolio-product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+   
+    width: 100%;
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+    @media screen and (min-width:1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
 }
 
 .portfolio-product-item {
     /*flex-basis: calc(100% / 3 - 30px);*/
-    max-width: 370px;
+    
     display:block;
-    &:not(:nth-child(3n +1)){
-        margin-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 100%;
+
+    @media screen and (min-width:768px) {
+        flex-direction: column;
+        width: 354px;
+        
+        &:not(:nth-child(2n +1)){
+            margin-left: 30px;
+            }
+        &:not(:nth-child(-n +2)) {
+            margin-top: 30px;
+            }
+        }
     }
-    &:not(:nth-child(-n +3)) {
-        margin-top: 30px;
-    }
+    @media screen and (min-width:1200px) {
+                
+        &:not(:nth-child(3n +1)){
+            margin-left: 30px;
+            }
+        &:not(:nth-child(-n +3)) {
+            margin-top: 30px;
+            }  
 }
+
 .portfolio-link{
+    
+    height: 100%;
     border: 1px solid #EEEEEE;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
