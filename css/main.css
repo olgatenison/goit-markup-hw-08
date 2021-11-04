@@ -105,18 +105,37 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .title {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--secondary-title-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--secondary-title-color);
+    margin-bottom: 50px;
+  }
 }
 
 .header {
@@ -324,6 +343,7 @@ body {
 @media screen and (min-width: 1200px) {
   .advantage-list__item {
     flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
   }
 }
 
@@ -371,6 +391,12 @@ body {
   padding-top: 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .gallery {
+    display: none;
+  }
+}
+
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
@@ -415,20 +441,45 @@ body {
 }
 
 .team-list {
-  display: flex;
-  justify-content: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .team-list__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 270px;
   background-color: var(--background-main-color);
+  width: 100%;
+  margin-bottom: 30px;
 }
 
-.team-list__item:not(:first-child) {
-  margin-left: 30px;
-  /*flex-basis: calc(100% / 4 - 30px);*/
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    max-width: 262px;
+    margin-left: 30px;
+  }
 }
 
 .team-list__card-contant {

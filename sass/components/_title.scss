@@ -1,6 +1,14 @@
 .title {
-    @include font (36px, 700, 1.16, 0.03em);
+    @include font (28px, 700, 1.16, 0.03em);
     text-align: center;
     color: var(--secondary-title-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width:1200px){
+    
+        @include font (36px, 700, 1.16, 0.03em);
+        text-align: center;
+        color: var(--secondary-title-color);
+        margin-bottom: 50px;
+    }
 }
