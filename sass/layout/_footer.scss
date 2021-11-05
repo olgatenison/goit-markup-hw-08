@@ -130,7 +130,7 @@
 }
 
 .signup-input {
-    
+    width: 100%;
     height: 50px;
     
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -162,8 +162,9 @@
     &:focus::placeholder {
         color: #ffffff;
     }
-    @media screen and (max-width: 1199px){
-        width: 100%;
+    
+    @media screen and (min-width: 480px){
+        width: 450px;
        
     }
     @media screen and (min-width: 1200px){
