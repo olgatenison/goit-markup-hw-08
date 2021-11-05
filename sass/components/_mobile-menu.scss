@@ -65,6 +65,10 @@
         color: var(--accent-color);
         background-color: white;
     }
+    @media (max-width: 479px) {
+      @include font (30px, 500, 1.17, 0.02em);
+      margin-bottom: 20px;
+    }
   }
   .mobile-menu-item .current{
     color: var(--accent-color);
@@ -73,11 +77,19 @@
   @include font (34px, 500, 1.17, 0.02em);
   color: var(--accent-color);
   margin-bottom: 32px;
+  @media (max-width: 479px) {
+    @include font (25px, 500, 1.17, 0.02em);
+    margin-bottom: 20px;
+  }
 }
 .mobile-menu-mail{
   @include font (24px, 500, 1.17, 0.02em);
   color: var(--secondary-text-color);
   margin-bottom: 64px;
+  @media (max-width: 479px) {
+    @include font (16px, 500, 1.17, 0.02em);
+    margin-bottom: 20px;
+  }
 }
 .social-nav {
   display: flex;
@@ -99,4 +111,8 @@
   display: block;
   @include font(18px, 500, 1.22, 0.02em);
   color: var(--accent-color);
+  @media (max-width: 479px) {
+    @include font (11px, 500, 1.17, 0.02em);
+    margin-bottom: 20px;
+  }
 }
