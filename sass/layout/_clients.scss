@@ -27,9 +27,12 @@
     
 }
 .clients-list__item{
-        width: 210px;
+        max-width: 210px;
         margin-bottom: 30px;
         margin-left: 30px;
+    @media screen and (min-width:480px){
+        width: 210px; 
+    }
     @media screen and (min-width:768px){
         width: 170px; 
     }    
