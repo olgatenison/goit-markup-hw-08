@@ -16,11 +16,22 @@
 </head>
 <body>
 <!--header-->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-navigation">
             <a href="./index.html" class="header-logo link">Web<span class="logo-accent">Studio</span></a>
             <nav>
-                <ul class="header-list list">
+            <button
+                class="menu-toggle js-open-menu btn"
+                aria-expanded="false"
+                aria-controls="mobile-menu"> 
+                <svg 
+                width="40"
+                height="40"
+                aria-label="Переключатель млбильного меню">
+                    <use href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <ul class="header-list list">
                 <li class="header-item">
                     <a href="./index.html" class="header-link link current">Студия</a>
                 </li>
@@ -30,7 +41,7 @@
                 <li class="header-item" >
                     <a href="" class="header-link link">Контакты</a>
                 </li>
-                </ul>
+            </ul>
             </nav>
             <ul class="header-contacts-list list">
                 <li class="header-contacts-item">
@@ -53,7 +64,7 @@
                 </li>
             </ul>  
         </div>  
-    </header> -->
+    </header>
     <main>
 <!--hero-->
         <section class="hero">
@@ -557,6 +568,67 @@
             </form>
         </div>
     </div>
+<!------------mobile menu-------------->
+
+<div class="menu-container js-menu-container is-open" id="mobile-menu">
+    <button
+      type="button"
+      class="button-menu button-menu--close js-close-menu btn">
+      <svg width="40" height="40" aria-label="Переключатель млбильного меню">
+        <use href="./images/sprite.svg#icon-close_menu"></use>
+      </svg>
+    </button>
+    <div class="menu-wrap">
+        <ul class="header-list list">
+            <li class="header-item">
+                <a href="./index.html" class="header-link link current">Студия</a>
+            </li>
+            <li class="header-item" >
+                <a href="./portfolio.html" class="header-link link ">Портфолио</a>
+            </li>
+            <li class="header-item" >
+                <a href="" class="header-link link">Контакты</a>
+            </li>
+        </ul>
+
+        <ul class="header-contacts-list list">
+            <li class="header-contacts-item">
+                    <a class="header-contacts-link link" href="mailto:info@devstudio.com">
+                    <svg class="header-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-mail"></use>
+                    </svg>   
+                    info@devstudio.com
+                </a>
+            </li>
+            
+            <li class="header-contacts-item">
+                    <a class="header-contacts-link link" href="tel:+380961111111">
+                    <svg class="header-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-tel">
+                        </use>
+                    </svg>
+                    +38 096 111 11 11
+                </a>
+            </li>
+        </ul> 
+
+        <ul class="social-nav">
+            <li class="social-nav__item">
+              <a class="social-nav__link" href="">Instagram</a>
+            </li>
+            <li class="social-nav__item">
+              <a class="social-nav__link" href="">Twitter</a>
+            </li>
+            <li class="social-nav__item">
+              <a class="social-nav__link" href="">Facebook</a>
+            </li>
+            <li class="social-nav__item">
+              <a class="social-nav__link" href="">Linkedin</a>
+            </li>
+          </ul>
+
+    </div>
+<!------------scripts-------------->
     <script src="./js/modal.js"></script>
     <script
     defer
