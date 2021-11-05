@@ -1136,7 +1136,7 @@ body {
 
 @media screen and (max-width: 1199px) {
   .signup-input {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
