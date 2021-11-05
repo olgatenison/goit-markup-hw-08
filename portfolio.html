@@ -15,13 +15,24 @@
     
 </head>
 <body>
-    <!--<header class="header">
+    <header class="header">
         <div class="container header-navigation">
             <a href="./index.html" class="header-logo link">Web<span class="logo-accent">Studio</span></a>
             <nav>
-                <ul class="header-list list">
+            <button
+                class="menu-toggle js-open-menu btn"
+                aria-expanded="false"
+                aria-controls="mobile-menu"> 
+                <svg 
+                width="40"
+                height="40"
+                aria-label="Переключатель млбильного меню">
+                    <use href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <ul class="header-list list">
                 <li class="header-item">
-                    <a href="./index.html" class="header-link link">Студия</a>
+                    <a href="./index.html" class="header-link link ">Студия</a>
                 </li>
                 <li class="header-item" >
                     <a href="./portfolio.html" class="header-link link current">Портфолио</a>
@@ -29,7 +40,7 @@
                 <li class="header-item" >
                     <a href="" class="header-link link">Контакты</a>
                 </li>
-                </ul>
+            </ul>
             </nav>
             <ul class="header-contacts-list list">
                 <li class="header-contacts-item">
@@ -52,7 +63,7 @@
                 </li>
             </ul>  
         </div>  
-    </header>-->
+    </header>
     <main>
 <!--portfolio--> 
        <section class="portfolio section">

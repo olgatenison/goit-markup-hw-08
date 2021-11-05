@@ -2,10 +2,12 @@
     background-color: var(--background-main-color);
     fill: #000000;
     margin-top: 10px;
+    outline: none;
 
     &:hover,
     &:focus {
       fill: var(--accent-color);
+      outline: none;
     }
     @media (min-width: 768px) {
       display: none;
@@ -23,11 +25,11 @@
 
         transform: translateX(100%);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        overflow-y: scroll;
   }  
-    .menu-container .is-open {
-        transform: translateX (100%);
-
-  }
+    .menu-container.is-open {
+        transform: translateX (0);
+    }
 
   .menu-wrap {
     display: flex;
@@ -37,8 +39,64 @@
     height: 100%;
   }
 
-  .button-menu--close {
+.button-menu--close {
+    outline: none;
     position: absolute;
     top: 10px;
     right: 15px;
+    background-color: white;
+    fill: var(--primary-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover{
+      fill: var(--accent-color);
+      outline: none;
+    }
   }
+
+.mobile-menu-link {
+    @include font (40px, 500, 1.17, 0.02em);
+    text-align: left;
+    color: var(--primary-text-color);
+    margin-bottom: 32px;
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &.mobile-menu-link:focus {
+        color: var(--accent-color);
+        background-color: white;
+    }
+  }
+  .mobile-menu-item .current{
+    color: var(--accent-color);
+}
+.mobile-menu-tel {
+  @include font (34px, 500, 1.17, 0.02em);
+  color: var(--accent-color);
+  margin-bottom: 32px;
+}
+.mobile-menu-mail{
+  @include font (24px, 500, 1.17, 0.02em);
+  color: var(--secondary-text-color);
+  margin-bottom: 64px;
+}
+.social-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
+}
+.social-nav__item {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  &:last-child {
+    margin-right: 0px;
+    padding-right: 0px;
+    border-right: none;
+  }
+}
+.social-nav__link {
+  display: block;
+  @include font(18px, 500, 1.22, 0.02em);
+  color: var(--accent-color);
+}

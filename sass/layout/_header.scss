@@ -47,6 +47,11 @@
         background-color: var(--accent-color);
     
         bottom: -1px;
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+            
+        
     }
 }
 
@@ -65,13 +70,30 @@
 .header-contacts-list{
     display: flex;
     margin-left: auto;
+    @media screen and (max-width: 1199px){
+        display: flex;
+        flex-direction: column;
+        
+    }
     @media screen and (max-width: 767px){
         display: none;
     }
+    
+    @media screen and (min-width: 1200px){
+        display: flex;
+        margin-left: auto;
+        
+    }
 }
 .header-contacts-item{
+    margin-right: 0;
+    margin-bottom: 10px;
+    @media screen and (min-width: 1200px){
+        margin-bottom: 0;
     &:not(:last-child){
         margin-right: 50px;
+        
+        }
     }
 }
 .header-icon  {
