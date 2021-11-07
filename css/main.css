@@ -358,7 +358,7 @@ body {
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.03em;
     max-width: 696px;
   }
 }
@@ -367,9 +367,9 @@ body {
   color: var(--primary-title-color);
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  padding: 10px 32px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  padding: 10px 25px;
   background-color: var(--accent-color);
   width: 200px;
   height: 50px;
@@ -407,7 +407,6 @@ body {
   .advantage-list__item {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
   }
@@ -430,6 +429,12 @@ body {
   margin-bottom: 10px;
   margin: 0, auto;
   text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+  .advantage-list__theme {
+    text-align: left;
+  }
 }
 
 .advantage-list__text {

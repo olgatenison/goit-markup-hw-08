@@ -19,8 +19,7 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        
-        justify-content: center;
+                
         flex-basis: calc((100% - 60px) / 2);
         margin-left: 30px;
         
@@ -38,6 +37,9 @@
     margin-bottom: 10px;
     margin: 0, auto;
     text-align: center;
+    @media screen and (min-width: 767px){
+        text-align: left;
+    }
 }
 .advantage-list__text{
     line-height: 1.71;

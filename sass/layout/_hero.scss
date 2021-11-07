@@ -79,15 +79,15 @@
         max-width: 360px; 
     }
     @media screen and (min-width: 1200px) {
-        @include font (44px, 900, 1.36, 0.06em);
+        @include font (44px, 900, 1.36, 0.03em);
         max-width: 696px;
     }
 }
 
 .hero__btn { 
     color: var(--primary-title-color);
-    @include font (16px, 700, 1.14, 0.03em);
-    padding: 10px 32px;
+    @include font (16px, 700, 1.6, 0.06em);
+    padding: 10px 25px;
     background-color: var(--accent-color);
     width: 200px;
     height: 50px;
