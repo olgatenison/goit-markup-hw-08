@@ -25,6 +25,4 @@ This project is educational and part of the Go IT course, and it is not intended
 
 
 
-## Author
 
-[Olga Tenison] - [https://github.com/olgatenison]
