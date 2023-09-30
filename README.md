@@ -1,4 +1,4 @@
-## Educational Project: 
+# Educational Project
 #Two-Page Landing Page for Design Studio
 
 
