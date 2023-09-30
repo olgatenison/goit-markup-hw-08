@@ -21,7 +21,7 @@ This repository represents an educational project of a two-page landing page dev
 
 ## Contribution 
 
-This project is educational and part of the Go IT course, and it is not intended for commercial use. We welcome your ideas, suggestions, and bug fixes.
+This project is educational and part of the Go IT course, and it is not intended for commercial use. 
 
 
 
